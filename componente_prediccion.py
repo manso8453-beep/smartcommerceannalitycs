@@ -5,7 +5,8 @@ import numpy as np
 #creamos la clase principal del motor de prediccion.
 class MotorPrediccion:
     #componente analitico para estimar la demanda futura del inventario.
-    def __init__(self, incremento_simulado = 0.15):
+    def __init__(self, incremento_simulado = 0.15
+                 ):
         self.incremento = incremento_simulado
     
     def predecir_demanda(self, df_historico: pd.DataFrame) -> pd.DataFrame:
